@@ -1,0 +1,14 @@
+#main-wrap {
+	background-color: red;
+	height: 800px;
+}
+
+#main-content {
+	background-color: white;
+	height: 800px;
+}
+
+.jumbotron {
+
+	background-image: url( "../imgs/concrete_seamless.png" );
+}
