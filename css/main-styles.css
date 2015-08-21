@@ -1,14 +1,45 @@
+body {
+background-image: url( "../imgs/concrete_seamless.png" );
+}
 #main-wrap {
-	background-color: red;
 	height: 800px;
 }
 
 #main-content {
-	background-color: white;
-	height: 800px;
+
 }
 
 .jumbotron {
+	padding: 110px 0;
+	background-color: red;
+	/* background: rgb(255, 255, 255); Fall-back for browsers that don't
+	                                    support rgba
+	    background: rgba(255, 255, 255, 0); */
+}
 
-	background-image: url( "../imgs/concrete_seamless.png" );
+
+/******************** NAVIGATION ********************/
+
+
+#nav-bar .logo a {
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+	background-size: cover;
+	background-image: url( "../imgs/logo.png");
+}
+
+#nav-bar .logo a span {
+	display: none;
+}
+
+.navbar-nav > li {
+	padding: 0 20px;
+} 
+
+
+/******************** FOOTER ********************/
+
+#footer .container {
+	border: 1px solid black;
 }
