@@ -1,45 +1,123 @@
+/******************** GENERAL ********************/
 body {
-background-image: url( "../imgs/concrete_seamless.png" );
-}
-#main-wrap {
-	height: 800px;
+	background-color: #fff;
+	margin-top: 30px;
 }
 
-#main-content {
-
+.container {
+	max-width: 1000px;
 }
 
-.jumbotron {
-	padding: 110px 0;
-	background-color: red;
-	/* background: rgb(255, 255, 255); Fall-back for browsers that don't
-	                                    support rgba
-	    background: rgba(255, 255, 255, 0); */
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
 }
+
 
 
 /******************** NAVIGATION ********************/
 
 
-#nav-bar .logo a {
-	width: 50px;
-	height: 50px;
-	margin-left: 20px;
+.header {
+	margin-bottom: 0;
+	border-bottom: 0;
+	/*background-color: #e3e5e4;*/
+}
+
+.show-image {
+width: 50px;
+height: 50px;
+background: url('../imgs/logo.png');
+background-size: cover;
+}
+
+.hide-text {
+text-indent: 250%; 
+white-space: nowrap;
+overflow: hidden; 
+}
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+	background-color: transparent;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
+
+.jumbotron {
+	padding: 0;
+	margin-bottom: 0;
+	height: 400px;
+	background: url('../imgs/jumbo_camera.jpg');
 	background-size: cover;
-	background-image: url( "../imgs/logo.png");
+	border-radius: 0;
+	position: relative;
 }
 
-#nav-bar .logo a span {
-	display: none;
+@media (max-width: 750px) {
+
+	.container .jumbotron {
+		background-image: none;
+	}
+
+	.container .jumbotron .jumbotron-text {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
 }
 
-.navbar-nav > li {
-	padding: 0 20px;
-} 
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+	border-radius: 0;
+}
+
+.jumbotron .jumbotron-text {
+	width: 70%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #2C3E50;
+}
+
+.jumbotron .jumbotron-text h1{
+	font-family: 'Martel Sans', sans-serif;
+	color: #000;
+	font-size: ;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+
+.information-bg {
+	padding: 15px 0;
+	background-color: #f6f6f6;
+}
+
+.container .information {
+	font-family: 'Martel Sans', sans-serif;
+	color: #2C3E50;
+}
+
+.content-bg {
+	height: 600px;
+	background-color: #e3e5e4;
+}
+
+
 
 
 /******************** FOOTER ********************/
+/*
 
-#footer .container {
-	border: 1px solid black;
-}
+
+#footer h4 {
+	font-weight: bold;
+	font-family: 'Titillium Web', sans-serif;
+}*/
